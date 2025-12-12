@@ -1,0 +1,90 @@
+{
+    "servicios": [
+        {
+            "id": "1764282199021",
+            "tipo": "promocion",
+            "nombre": "Promocion Tamizaje ITS",
+            "contacto": "https://wa.me/593984755477",
+            "keywords": [
+                "Promocion",
+                "paquete",
+                "promocion laboratorio",
+                "octubre"
+            ],
+            "habilitado": true,
+            "fechaInicio": "2025-12-01",
+            "fechaFin": "2025-12-31",
+            "precioNormal": "35",
+            "precioPromocion": "20",
+            "descripcion": "Consulta Medicina General + Revisión Exámenes y Panel ETS"
+        },
+        {
+            "id": "1764282346921",
+            "tipo": "salud",
+            "nombre": "Laboratorio Clinico",
+            "contacto": "https://wa.me/593984755477",
+            "keywords": [
+                "laboratorio",
+                "prueba de embarazo",
+                "tipificación"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Luneas a Viernes: 7:00 AM - 18:00 PM",
+            "horarioFinSemana": "Sábado y Domingo: 7:00 AM - 15:30 PM",
+            "horarioFeriado": "7:00 AM - 12:00 PM",
+            "agendamiento": "No es necesario agendar turno"
+        },
+        {
+            "id": "1764340359831",
+            "tipo": "capacitacion",
+            "nombre": "Curso Primeros Auxilios",
+            "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
+            "keywords": [
+                "PAB",
+                "Auxilios",
+                "capacitación"
+            ],
+            "habilitado": true,
+            "fechasRealizacion": "6-7-14-15 de Diciembre 2025",
+            "horario": "8:00 AM - 17:00 PM",
+            "costo": "49.99",
+            "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico con certificado avalado por Cruz Roja Junta Provincial de Imbabura"
+        },
+        {
+            "id": "1765547791412",
+            "tipo": "salud",
+            "nombre": "Donación de Sangre",
+            "contacto": "Llamar al número 062950888 extensión 108 o acercarse a la institución.",
+            "keywords": [
+                "donacion",
+                "sangre",
+                "donar",
+                "colecta"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Lunes a Viernes: 8:00 AM - 17:00 PM",
+            "horarioFinSemana": "Sábado: 8:00 AM - 12:00 PM",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "No es necesario agendar, lo puede hacer directamente en las instalaciones de Cruz Roja Imbabura en los horarios establecidos.\nPara más información sobre requisitos y beneficios para donar sangre lo encuentra en el siguiente enlace: 👉 https://cruzrojaimbabura.org.ec/donar-sangre/ "
+        },
+        {
+            "id": "1765548272499",
+            "tipo": "salud",
+            "nombre": "Ecografía",
+            "contacto": " http://wa.me/593994349535",
+            "keywords": [
+                "ecografia",
+                "transvaginal",
+                "renal",
+                "prostatico"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Rotativo",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento a este número de WhatsApp http://wa.me/593994349535 en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida. El personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        }
+    ],
+    "ultimaActualizacion": "2025-12-12T17:33:40.797Z",
+    "version": "3.0"
+}

@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Servicios JPI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .sync-status {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .sync-status.synced {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .sync-status.syncing {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .sync-status.error {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        .actions {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #059669;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-card.disabled {
+            opacity: 0.6;
+        }
+
+        .service-card.salud {
+            border-left: 5px solid #3b82f6;
+        }
+
+        .service-card.promocion {
+            border-left: 5px solid #f59e0b;
+        }
+
+        .service-card.capacitacion {
+            border-left: 5px solid #8b5cf6;
+        }
+
+        .service-card.voluntariado {
+            border-left: 5px solid #10b981;
+        }
+
+        .service-card.expired {
+            border: 3px solid #ef4444;
+            opacity: 0.5;
+        }
+
+        .service-status {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .service-status.enabled {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .service-status.disabled {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .service-type-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .badge-salud {
+            background: rgba(59, 130, 246, 0.2);
+            color: #3b82f6;
+        }
+
+        .badge-promocion {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+
+        .badge-capacitacion {
+            background: rgba(139, 92, 246, 0.2);
+            color: #8b5cf6;
+        }
+
+        .badge-voluntariado {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .badge-expired {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .service-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-info {
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 8px;
+            margin: 8px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .info-item strong {
+            color: #333;
+            min-width: 110px;
+        }
+
+        .price-info {
+            background: rgba(16, 185, 129, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .price-normal {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .price-promo {
+            color: #10b981;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .date-range {
+            background: rgba(245, 158, 11, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .link-box {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .link-box a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .link-box a:hover {
+            text-decoration: underline;
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 15px 0;
+        }
+
+        .keyword-tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+
+        .service-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .btn-small {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            max-width: 700px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-header h2 {
+            color: #667eea;
+            font-size: 1.5rem;
+        }
+
+        .close {
+            font-size: 2rem;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s;
+        }
+
+        .close:hover {
+            color: #ef4444;
+        }
+
+        .modal-body {
+            padding: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="url"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            padding: 25px;
+            border-top: 1px solid #eee;
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .message.success {
+            background: #d1fae5;
+            color: #065f46;
+            border-left: 4px solid #10b981;
+        }
+
+        .message.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border-left: 4px solid #ef4444;
+        }
+
+        .message.info {
+            background: #dbeafe;
+            color: #1e40af;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .config-section {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .config-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .config-input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .type-fields {
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .type-fields.salud {
+            background: rgba(59, 130, 246, 0.05);
+            border: 2px dashed #3b82f6;
+        }
+
+        .type-fields.promocion {
+            background: rgba(245, 158, 11, 0.05);
+            border: 2px dashed #f59e0b;
+        }
+
+        .type-fields.capacitacion {
+            background: rgba(139, 92, 246, 0.05);
+            border: 2px dashed #8b5cf6;
+        }
+
+        .type-fields.voluntariado {
+            background: rgba(16, 185, 129, 0.05);
+            border: 2px dashed #10b981;
+        }
+
+        .type-fields h4 {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Gestor de Servicios JPI</h1>
+            <p class="subtitle">Salud • Promociones • Capacitación • Voluntariado</p>
+            <div class="sync-status syncing" id="syncStatus">
+                ⏳ Cargando...
+            </div>
+        </header>
+
+        <!-- Configuración -->
+        <div class="config-section">
+            <h3>⚙️ Configuración</h3>
+            <div class="form-group">
+                <label for="servicesUrl">URL del services.json:</label>
+                <input type="text" id="servicesUrl" class="config-input"
+                    placeholder="https://tuusuario.github.io/health-services-simple/services.json"
+                    onchange="saveConfig()">
+                <small style="color: #666;">URL donde está alojado tu services.json</small>
+            </div>
+            <div class="form-group">
+                <label for="n8nWebhook">URL del Webhook de n8n (opcional):</label>
+                <input type="text" id="n8nWebhook" class="config-input"
+                    placeholder="https://tu-n8n.com/webhook/invalidar-cache" onchange="saveConfig()">
+                <small style="color: #666;">Para invalidar caché automáticamente</small>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalServices">0</div>
+                <div class="stat-label">Total</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="saludServices">0</div>
+                <div class="stat-label">Salud</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="promocionServices">0</div>
+                <div class="stat-label">Promociones</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="capacitacionServices">0</div>
+                <div class="stat-label">Capacitación</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="voluntariadoServices">0</div>
+                <div class="stat-label">Voluntariado</div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary" onclick="openAddModal()">
+                ➕ Agregar Servicio
+            </button>
+            <button class="btn btn-success" onclick="downloadJSON()">
+                ⬇ Descargar JSON
+            </button>
+            <button class="btn btn-secondary" onclick="loadFromUrl()">
+                🔄 Recargar
+            </button>
+            <input type="file" id="fileInput" accept=".json" style="display:none" onchange="loadFile(event)">
+            <button class="btn btn-secondary" onclick="document.getElementById('fileInput').click()">
+                📂 Cargar Archivo
+            </button>
+        </div>
+
+        <div id="message"></div>
+        <div class="services-grid" id="servicesGrid"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Agregar Servicio</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="serviceForm" onsubmit="saveService(event)">
+                    <div class="form-group">
+                        <label for="tipo">Tipo de Servicio *</label>
+                        <select id="tipo" required onchange="toggleTypeFields()">
+                            <option value="salud">🏥 Salud (Permanente)</option>
+                            <option value="promocion">🎉 Promoción (Temporal)</option>
+                            <option value="capacitacion">📚 Capacitación (Curso/Taller)</option>
+                            <option value="voluntariado">🤝 Voluntariado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre del Servicio *</label>
+                        <input type="text" id="nombre" required placeholder="Ej: Consulta General">
+                    </div>
+
+                    <!-- Campos SALUD -->
+                    <div id="saludFields" class="type-fields salud">
+                        <h4 style="color: #3b82f6;">🏥 Información de Salud</h4>
+
+                        <div class="form-group">
+                            <label for="horarioSemana">Horario Entre Semana *</label>
+                            <input type="text" id="horarioSemana" placeholder="Ej: Lunes a Viernes: 8:00 AM - 5:00 PM">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horarioFinSemana">Horario Fin de Semana *</label>
+                            <input type="text" id="horarioFinSemana" placeholder="Ej: Sábado: 9:00 AM - 1:00 PM">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horarioFeriado">Horario Feriados *</label>
+                            <input type="text" id="horarioFeriado" placeholder="Ej: Cerrado">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="agendamiento">¿Cómo Agendar? *</label>
+                            <textarea id="agendamiento"
+                                placeholder="Ej: Llamar al 555-0101 o enviar WhatsApp"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Campos PROMOCION -->
+                    <div id="promocionFields" class="type-fields promocion" style="display: none;">
+                        <h4 style="color: #f59e0b;">🎉 Información de Promoción</h4>
+
+                        <div class="form-group">
+                            <label for="fechaInicio">Fecha de Inicio *</label>
+                            <input type="date" id="fechaInicio">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fechaFin">Fecha de Fin *</label>
+                            <input type="date" id="fechaFin">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="precioNormal">Precio Normal *</label>
+                            <input type="text" id="precioNormal" placeholder="Ej: $500">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="precioPromocion">Precio Promoción *</label>
+                            <input type="text" id="precioPromocion" placeholder="Ej: $350">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descripcionPromo">Descripción *</label>
+                            <textarea id="descripcionPromo"
+                                placeholder="Ej: Paquete incluye: Biometría hemática..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Campos CAPACITACION -->
+                    <div id="capacitacionFields" class="type-fields capacitacion" style="display: none;">
+                        <h4 style="color: #8b5cf6;">📚 Información de Capacitación</h4>
+
+                        <div class="form-group">
+                            <label for="fechasRealizacion">Fechas de Realización *</label>
+                            <input type="text" id="fechasRealizacion"
+                                placeholder="Ej: 22, 23, 29 y 30 de Noviembre 2025">
+                            <small style="color: #666;">Escribe las fechas del curso (generalmente 4 días)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horarioCurso">Horario del Curso *</label>
+                            <input type="text" id="horarioCurso" placeholder="Ej: 6:00 PM - 9:00 PM">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="costoCurso">Costo *</label>
+                            <input type="text" id="costoCurso" placeholder="Ej: $800">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descripcionCurso">Descripción *</label>
+                            <textarea id="descripcionCurso"
+                                placeholder="Ej: Curso de 4 días sobre técnicas básicas..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Campos VOLUNTARIADO -->
+                    <div id="voluntariadoFields" class="type-fields voluntariado" style="display: none;">
+                        <h4 style="color: #10b981;">🤝 Información de Voluntariado</h4>
+
+                        <div class="form-group">
+                            <label for="descripcionVol">Descripción *</label>
+                            <textarea id="descripcionVol"
+                                placeholder="Ej: Únete a nuestro programa de voluntariado..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="linkInfo">Link para Más Información *</label>
+                            <input type="url" id="linkInfo" placeholder="https://www.ejemplo.com/voluntariado">
+                        </div>
+                    </div>
+
+                    <!-- Campos COMUNES -->
+                    <div class="form-group">
+                        <label for="contacto">Contacto *</label>
+                        <input type="text" id="contacto" required placeholder="Ej: 555-0101">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="keywords">Palabras Clave (separadas por coma) *</label>
+                        <input type="text" id="keywords" required placeholder="Ej: consulta, médico, doctor">
+                        <small style="color: #666;">Ayuda al chatbot a identificar este servicio</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="habilitado" checked>
+                            Servicio habilitado
+                        </label>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let servicios = [];
+        let currentEditId = null;
+        let config = {
+            servicesUrl: './services.json',
+            n8nWebhook: ''
+        };
+
+        loadConfig();
+        loadFromUrl();
+
+        function loadConfig() {
+            const saved = localStorage.getItem('healthServicesConfig');
+            if (saved) {
+                config = JSON.parse(saved);
+                document.getElementById('servicesUrl').value = config.servicesUrl || './services.json';
+                document.getElementById('n8nWebhook').value = config.n8nWebhook || '';
+            }
+        }
+
+        function saveConfig() {
+            config.servicesUrl = document.getElementById('servicesUrl').value || './services.json';
+            config.n8nWebhook = document.getElementById('n8nWebhook').value;
+            localStorage.setItem('healthServicesConfig', JSON.stringify(config));
+            showMessage('Configuración guardada', 'success');
+        }
+
+        async function loadFromUrl() {
+            const statusEl = document.getElementById('syncStatus');
+            statusEl.className = 'sync-status syncing';
+            statusEl.textContent = '⏳ Cargando...';
+
+            try {
+                const response = await fetch(config.servicesUrl + '?t=' + Date.now());
+                if (!response.ok) throw new Error('Error al cargar');
+
+                const data = await response.json();
+                servicios = data.servicios || [];
+
+                statusEl.className = 'sync-status synced';
+                statusEl.textContent = '✓ Cargado';
+
+                renderServices();
+                showMessage(`${servicios.length} servicios cargados`, 'success');
+            } catch (error) {
+                statusEl.className = 'sync-status error';
+                statusEl.textContent = '✗ Error';
+
+                const saved = localStorage.getItem('healthServices');
+                if (saved) {
+                    const data = JSON.parse(saved);
+                    servicios = data.servicios || [];
+                    renderServices();
+                    showMessage('Usando datos locales', 'info');
+                }
+            }
+        }
+
+        function saveData() {
+            const data = {
+                servicios: servicios,
+                ultimaActualizacion: new Date().toISOString(),
+                version: "3.0"
+            };
+
+            localStorage.setItem('healthServices', JSON.stringify(data));
+            renderServices();
+            syncToN8N();
+        }
+
+        async function syncToN8N() {
+            if (!config.n8nWebhook) return;
+
+            try {
+                await fetch(config.n8nWebhook, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        action: 'invalidate_cache',
+                        timestamp: new Date().toISOString()
+                    })
+                });
+            } catch (error) {
+                console.error('Error sincronizando:', error);
+            }
+        }
+
+        function isExpired(servicio) {
+            if (servicio.tipo !== 'promocion' || !servicio.fechaFin) return false;
+            return new Date() > new Date(servicio.fechaFin);
+        }
+
+        function renderServices() {
+            const grid = document.getElementById('servicesGrid');
+            const total = servicios.length;
+            const salud = servicios.filter(s => s.tipo === 'salud').length;
+            const promocion = servicios.filter(s => s.tipo === 'promocion').length;
+            const capacitacion = servicios.filter(s => s.tipo === 'capacitacion').length;
+            const voluntariado = servicios.filter(s => s.tipo === 'voluntariado').length;
+
+            document.getElementById('totalServices').textContent = total;
+            document.getElementById('saludServices').textContent = salud;
+            document.getElementById('promocionServices').textContent = promocion;
+            document.getElementById('capacitacionServices').textContent = capacitacion;
+            document.getElementById('voluntariadoServices').textContent = voluntariado;
+
+            if (servicios.length === 0) {
+                grid.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📋</div>
+                        <h3>No hay servicios</h3>
+                        <p>Agrega servicios o carga desde URL</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = servicios.map(s => {
+                const expired = isExpired(s);
+                const badges = {
+                    salud: '🏥 Salud',
+                    promocion: expired ? '⏰ Expirado' : '🎉 Promoción',
+                    capacitacion: '📚 Capacitación',
+                    voluntariado: '🤝 Voluntariado'
+                };
+
+                let extraInfo = '';
+
+                // Info específica por tipo
+                if (s.tipo === 'salud') {
+                    extraInfo = `
+                        <div class="info-item"><strong>📅 Entre semana:</strong> <span>${s.horarioSemana}</span></div>
+                        <div class="info-item"><strong>🏖️ Fin de semana:</strong> <span>${s.horarioFinSemana}</span></div>
+                        <div class="info-item"><strong>🎉 Feriados:</strong> <span>${s.horarioFeriado}</span></div>
+                        <div class="info-item"><strong>📝 Agendamiento:</strong> <span>${s.agendamiento}</span></div>
+                    `;
+                } else if (s.tipo === 'promocion') {
+                    extraInfo = `
+                        <div class="date-range">📅 <strong>Vigencia:</strong> ${s.fechaInicio} al ${s.fechaFin}
+                        ${expired ? '<br><span style="color: #ef4444; font-weight: bold;">⚠️ Expirado</span>' : ''}</div>
+                        <div class="price-info">
+                            <div class="price-normal">Precio normal: ${s.precioNormal}</div>
+                            <div class="price-promo">Precio promoción: ${s.precioPromocion}</div>
+                        </div>
+                        <div class="info-item"><strong>📝 Descripción:</strong> <span>${s.descripcion}</span></div>
+                    `;
+                } else if (s.tipo === 'capacitacion') {
+                    extraInfo = `
+                        <div class="info-item"><strong>📅 Fechas:</strong> <span>${s.fechasRealizacion}</span></div>
+                        <div class="info-item"><strong>⏰ Horario:</strong> <span>${s.horario}</span></div>
+                        <div class="info-item"><strong>💰 Costo:</strong> <span>${s.costo}</span></div>
+                        <div class="info-item"><strong>📝 Descripción:</strong> <span>${s.descripcion}</span></div>
+                    `;
+                } else if (s.tipo === 'voluntariado') {
+                    extraInfo = `
+                        <div class="info-item"><strong>📝 Descripción:</strong> <span>${s.descripcion}</span></div>
+                        <div class="link-box">
+                            <strong>🔗 Más información:</strong><br>
+                            <a href="${s.linkInfo}" target="_blank">${s.linkInfo}</a>
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="service-card ${s.tipo} ${expired ? 'expired' : ''} ${s.habilitado ? '' : 'disabled'}">
+                        <span class="service-status ${s.habilitado ? 'enabled' : 'disabled'}">
+                            ${s.habilitado ? '✓ Habilitado' : '✗ Deshabilitado'}
+                        </span>
+                        
+                        <span class="service-type-badge badge-${expired ? 'expired' : s.tipo}">${badges[s.tipo]}</span>
+                        
+                        <div class="service-name">${s.nombre}</div>
+                        
+                        <div class="service-info">
+                            ${extraInfo}
+                            <div class="info-item"><strong>📞 Contacto:</strong> <span>${s.contacto}</span></div>
+                        </div>
+                        
+                        <div class="keywords">
+                            ${s.keywords.map(kw => `<span class="keyword-tag">${kw}</span>`).join('')}
+                        </div>
+                        
+                        <div class="service-actions">
+                            <button class="btn btn-small ${s.habilitado ? 'btn-secondary' : 'btn-success'}" 
+                                    onclick="toggleService('${s.id}')">
+                                ${s.habilitado ? '⏸' : '▶'}
+                            </button>
+                            <button class="btn btn-small btn-primary" onclick="editService('${s.id}')">✏️</button>
+                            <button class="btn btn-small btn-danger" onclick="deleteService('${s.id}')">🗑️</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleTypeFields() {
+            const tipo = document.getElementById('tipo').value;
+
+            document.getElementById('saludFields').style.display = tipo === 'salud' ? 'block' : 'none';
+            document.getElementById('promocionFields').style.display = tipo === 'promocion' ? 'block' : 'none';
+            document.getElementById('capacitacionFields').style.display = tipo === 'capacitacion' ? 'block' : 'none';
+            document.getElementById('voluntariadoFields').style.display = tipo === 'voluntariado' ? 'block' : 'none';
+        }
+
+        function openAddModal() {
+            currentEditId = null;
+            document.getElementById('modalTitle').textContent = 'Agregar Servicio';
+            document.getElementById('serviceForm').reset();
+            document.getElementById('habilitado').checked = true;
+            document.getElementById('tipo').value = 'salud';
+            toggleTypeFields();
+            document.getElementById('serviceModal').classList.add('active');
+        }
+
+        function editService(id) {
+            const s = servicios.find(x => x.id === id);
+            if (!s) return;
+
+            currentEditId = id;
+            document.getElementById('modalTitle').textContent = 'Editar Servicio';
+            document.getElementById('tipo').value = s.tipo;
+            document.getElementById('nombre').value = s.nombre;
+            document.getElementById('contacto').value = s.contacto;
+            document.getElementById('keywords').value = s.keywords.join(', ');
+            document.getElementById('habilitado').checked = s.habilitado;
+
+            if (s.tipo === 'salud') {
+                document.getElementById('horarioSemana').value = s.horarioSemana;
+                document.getElementById('horarioFinSemana').value = s.horarioFinSemana;
+                document.getElementById('horarioFeriado').value = s.horarioFeriado;
+                document.getElementById('agendamiento').value = s.agendamiento;
+            } else if (s.tipo === 'promocion') {
+                document.getElementById('fechaInicio').value = s.fechaInicio;
+                document.getElementById('fechaFin').value = s.fechaFin;
+                document.getElementById('precioNormal').value = s.precioNormal;
+                document.getElementById('precioPromocion').value = s.precioPromocion;
+                document.getElementById('descripcionPromo').value = s.descripcion;
+            } else if (s.tipo === 'capacitacion') {
+                document.getElementById('fechasRealizacion').value = s.fechasRealizacion;
+                document.getElementById('horarioCurso').value = s.horario;
+                document.getElementById('costoCurso').value = s.costo;
+                document.getElementById('descripcionCurso').value = s.descripcion;
+            } else if (s.tipo === 'voluntariado') {
+                document.getElementById('descripcionVol').value = s.descripcion;
+                document.getElementById('linkInfo').value = s.linkInfo;
+            }
+
+            toggleTypeFields();
+            document.getElementById('serviceModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('serviceModal').classList.remove('active');
+            currentEditId = null;
+        }
+
+        function saveService(event) {
+            event.preventDefault();
+
+            const tipo = document.getElementById('tipo').value;
+            const serviceData = {
+                id: currentEditId || Date.now().toString(),
+                tipo: tipo,
+                nombre: document.getElementById('nombre').value,
+                contacto: document.getElementById('contacto').value,
+                keywords: document.getElementById('keywords').value.split(',').map(k => k.trim()).filter(k => k),
+                habilitado: document.getElementById('habilitado').checked
+            };
+
+            if (tipo === 'salud') {
+                serviceData.horarioSemana = document.getElementById('horarioSemana').value;
+                serviceData.horarioFinSemana = document.getElementById('horarioFinSemana').value;
+                serviceData.horarioFeriado = document.getElementById('horarioFeriado').value;
+                serviceData.agendamiento = document.getElementById('agendamiento').value;
+            } else if (tipo === 'promocion') {
+                serviceData.fechaInicio = document.getElementById('fechaInicio').value;
+                serviceData.fechaFin = document.getElementById('fechaFin').value;
+                serviceData.precioNormal = document.getElementById('precioNormal').value;
+                serviceData.precioPromocion = document.getElementById('precioPromocion').value;
+                serviceData.descripcion = document.getElementById('descripcionPromo').value;
+            } else if (tipo === 'capacitacion') {
+                serviceData.fechasRealizacion = document.getElementById('fechasRealizacion').value;
+                serviceData.horario = document.getElementById('horarioCurso').value;
+                serviceData.costo = document.getElementById('costoCurso').value;
+                serviceData.descripcion = document.getElementById('descripcionCurso').value;
+            } else if (tipo === 'voluntariado') {
+                serviceData.descripcion = document.getElementById('descripcionVol').value;
+                serviceData.linkInfo = document.getElementById('linkInfo').value;
+            }
+
+            if (currentEditId) {
+                const index = servicios.findIndex(s => s.id === currentEditId);
+                servicios[index] = serviceData;
+                showMessage('Servicio actualizado', 'success');
+            } else {
+                servicios.push(serviceData);
+                showMessage('Servicio agregado', 'success');
+            }
+
+            saveData();
+            closeModal();
+        }
+
+        function toggleService(id) {
+            const servicio = servicios.find(s => s.id === id);
+            if (servicio) {
+                servicio.habilitado = !servicio.habilitado;
+                saveData();
+            }
+        }
+
+        function deleteService(id) {
+            if (!confirm('¿Eliminar este servicio?')) return;
+            servicios = servicios.filter(s => s.id !== id);
+            saveData();
+            showMessage('Servicio eliminado', 'success');
+        }
+
+        function downloadJSON() {
+            const data = {
+                servicios: servicios,
+                ultimaActualizacion: new Date().toISOString(),
+                version: "3.0"
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'services.json';
+            a.click();
+            URL.revokeObjectURL(url);
+
+            showMessage('Descargado. Sube a GitHub con: git add services.json && git commit -m "Actualizar" && git push', 'success');
+        }
+
+        function loadFile(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    servicios = data.servicios || [];
+                    saveData();
+                    showMessage('Archivo cargado', 'success');
+                } catch (error) {
+                    showMessage('Error: ' + error.message, 'error');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function showMessage(text, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.innerHTML = `<div class="message ${type}">${text}</div>`;
+            setTimeout(() => messageDiv.innerHTML = '', 5000);
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById('serviceModal');
+            if (event.target === modal) closeModal();
+        }
+    </script>
+</body>
+
+</html>
