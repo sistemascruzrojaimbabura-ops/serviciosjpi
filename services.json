@@ -269,8 +269,25 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida. El personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765572070549",
+            "tipo": "salud",
+            "nombre": "Enfermería",
+            "contacto": "062950888 extensión 108 o acercarse a la institución.",
+            "keywords": [
+                "enfermera",
+                "enfermería",
+                "suero",
+                "sueros"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 8:00 a 17:00.",
+            "horarioFinSemana": "sábado 8:00 a 12:00",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para más información sobre nuestros servicios de enfermería contactarse con el siguiente número."
         }
     ],
-    "ultimaActualizacion": "2025-12-12T20:19:03.988Z",
+    "ultimaActualizacion": "2025-12-12T20:41:36.887Z",
     "version": "3.0"
 }
