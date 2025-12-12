@@ -72,10 +72,11 @@
             "nombre": "Ecografía",
             "contacto": " http://wa.me/593994349535",
             "keywords": [
-                "ecografia",
+                "ecografía",
                 "transvaginal",
                 "renal",
-                "prostatico"
+                "prostático",
+                "eco"
             ],
             "habilitado": true,
             "horarioSemana": "Rotativo",
@@ -286,6 +287,6 @@
             "linkInfo": "https://cruzrojaimbabura.org.ec/voluntariado/"
         }
     ],
-    "ultimaActualizacion": "2025-12-12T21:02:54.306Z",
+    "ultimaActualizacion": "2025-12-12T21:27:19.669Z",
     "version": "3.0"
 }
