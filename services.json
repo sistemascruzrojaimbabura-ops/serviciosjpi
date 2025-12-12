@@ -41,8 +41,7 @@
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
             "keywords": [
                 "PAB",
-                "Auxilios",
-                "capacitación"
+                "auxilios"
             ],
             "habilitado": true,
             "fechasRealizacion": "6-7-14-15 de Diciembre 2025",
@@ -83,8 +82,195 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento a este número de WhatsApp http://wa.me/593994349535 en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida. El personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765562442334",
+            "tipo": "salud",
+            "nombre": "Voluntariado",
+            "contacto": "Cualquier duda o inquietud puede comunicarse con el coordinador de voluntariado al siguiente número de WhatsApp https:wa.me/593993999138",
+            "keywords": [
+                "voluntario",
+                "voluntariado",
+                "voluntarios"
+            ],
+            "habilitado": true,
+            "horarioSemana": "",
+            "horarioFinSemana": "",
+            "horarioFeriado": "",
+            "agendamiento": "Para obtener la información detallada de los requisitos necesarios para ser voluntario de Cruz Roja Junta Provincial Imbabura debes ingresar al siguiente enlace: https://cruzrojaimbabura.org.ec/voluntariado/ allí se detallan los pasos a seguir"
+        },
+        {
+            "id": "1765566734319",
+            "tipo": "salud",
+            "nombre": "Pediatría",
+            "contacto": "http://wa.me/593994349535",
+            "keywords": [
+                "pediatría",
+                "pediatra"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes: 15:00 a 18:00 – jueves: 9:00 a 13:00",
+            "horarioFinSemana": "sábado 10:00 a 12:00",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente"
+        },
+        {
+            "id": "1765566892016",
+            "tipo": "salud",
+            "nombre": "Ginecología",
+            "contacto": "http://wa.me/593994349535",
+            "keywords": [
+                "ginecología",
+                "ginecólogo"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 8:00 a 18:00",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento  en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765567295223",
+            "tipo": "salud",
+            "nombre": "Medicina General",
+            "contacto": "http://wa.me/593994349535",
+            "keywords": [
+                "medicina",
+                "doctor",
+                "general",
+                "doctora"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 8:00 a 18:00",
+            "horarioFinSemana": "sábados: 8:00 a 11:00",
+            "horarioFeriado": "No aplica.",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765567472053",
+            "tipo": "salud",
+            "nombre": "Fisiatría",
+            "contacto": "http://wa.me/593994349535",
+            "keywords": [
+                "fisiatría",
+                "fisiatra"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 7:00 a 9:00",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento  en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765567834581",
+            "tipo": "salud",
+            "nombre": "Rehabilitación Física",
+            "contacto": "062950888 extensión 106",
+            "keywords": [
+                "rehabilitación",
+                "rehabilitar"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 7:00 a 18:00",
+            "horarioFinSemana": "sábado 8:00 a 12:00",
+            "horarioFeriado": "No aplica.",
+            "agendamiento": "Para contacto o más información llamar al número 062950888 extensión 106 o acercarse a la institución."
+        },
+        {
+            "id": "1765567963799",
+            "tipo": "salud",
+            "nombre": "Odontología",
+            "contacto": "https://wa.me/593993405842",
+            "keywords": [
+                "odontología",
+                "odontóloga"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 7:00 a 18:00",
+            "horarioFinSemana": "sábado 7:00 a 12:00.",
+            "horarioFeriado": "No aplica.",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765568190295",
+            "tipo": "salud",
+            "nombre": "Dermatología",
+            "contacto": "https://wa.me/593994349535",
+            "keywords": [
+                "dermatóloga",
+                "dermatología",
+                "piel"
+            ],
+            "habilitado": true,
+            "horarioSemana": "martes y jueves: 15:00 a 18:00",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765568388145",
+            "tipo": "salud",
+            "nombre": "Capacitación",
+            "contacto": "https:wa.me/593995127034",
+            "keywords": [
+                "cursos",
+                "capacitación"
+            ],
+            "habilitado": true,
+            "horarioSemana": "",
+            "horarioFinSemana": "",
+            "horarioFeriado": "",
+            "agendamiento": "Para más información e inscripciones comunicarse directamente al siguiente número de WhatsApp:"
+        },
+        {
+            "id": "1765568585453",
+            "tipo": "salud",
+            "nombre": "Alquiler y venta de Ortopédicos",
+            "contacto": "062950888 extensión 106",
+            "keywords": [
+                "ortopedia",
+                "ortopédicos",
+                "alquiler"
+            ],
+            "habilitado": true,
+            "horarioSemana": "lunes a viernes: 7:00 a 18:00",
+            "horarioFinSemana": "sábado 8:00 a 12:00",
+            "horarioFeriado": "No aplica.",
+            "agendamiento": "•Para contacto o más información llamar al número 062950888 extensión 106 o acercarse a la institución."
+        },
+        {
+            "id": "1765568716955",
+            "tipo": "salud",
+            "nombre": "Gastroenterología",
+            "contacto": "http://wa.me/593994349535 ",
+            "keywords": [
+                "gastro",
+                "gastroenterólogo",
+                "gastroenterología"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Solo martes y jueves: 11:00 a 14:30",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1765570538431",
+            "tipo": "salud",
+            "nombre": "Traumatología",
+            "contacto": "https://wa.me/593994349535",
+            "keywords": [
+                "trauma",
+                "traumatólogo",
+                "traumatología"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Lunes a viernes de 8 a 10 am, martes - miércoles y viernes de 4 a 6 pm",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida. El personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2025-12-12T17:33:40.797Z",
+    "ultimaActualizacion": "2025-12-12T20:19:03.988Z",
     "version": "3.0"
 }
