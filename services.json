@@ -72,9 +72,6 @@
             "contacto": " http://wa.me/593994349535",
             "keywords": [
                 "ecografía",
-                "transvaginal",
-                "renal",
-                "prostático",
                 "eco"
             ],
             "habilitado": true,
@@ -97,23 +94,6 @@
             "horarioFinSemana": "sábado 10:00 a 12:00",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente"
-        },
-        {
-            "id": "1765566892016",
-            "tipo": "salud",
-            "nombre": "Ginecología",
-            "contacto": "http://wa.me/593994349535",
-            "keywords": [
-                "ginecología",
-                "ginecólogo",
-                "ginecologia",
-                "ginecóloga"
-            ],
-            "habilitado": true,
-            "horarioSemana": "lunes a viernes: 8:00 a 18:00",
-            "horarioFinSemana": "No aplica",
-            "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento  en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765567295223",
@@ -286,8 +266,25 @@
             "habilitado": true,
             "descripcion": "Para obtener la información detallada de los requisitos necesarios para ser voluntario de Cruz Roja Junta Provincial Imbabura debes ingresar al siguiente enlace, allí se detallan los pasos a seguir:",
             "linkInfo": "https://cruzrojaimbabura.org.ec/voluntariado/"
+        },
+        {
+            "id": "1766197110772",
+            "tipo": "salud",
+            "nombre": "Ginecología",
+            "contacto": "http://wa.me/593994349535",
+            "keywords": [
+                "ginecología",
+                "ginecólogo",
+                "ginecologia",
+                "ginecóloga"
+            ],
+            "habilitado": true,
+            "horarioSemana": ": lunes a viernes: 8:00 a 18:00",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2025-12-20T02:01:34.459Z",
+    "ultimaActualizacion": "2025-12-20T02:18:33.972Z",
     "version": "3.0"
 }
