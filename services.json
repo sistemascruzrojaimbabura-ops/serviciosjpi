@@ -105,7 +105,9 @@
             "contacto": "http://wa.me/593994349535",
             "keywords": [
                 "ginecología",
-                "ginecólogo"
+                "ginecólogo",
+                "ginecologia",
+                "ginecóloga"
             ],
             "habilitado": true,
             "horarioSemana": "lunes a viernes: 8:00 a 18:00",
@@ -286,6 +288,6 @@
             "linkInfo": "https://cruzrojaimbabura.org.ec/voluntariado/"
         }
     ],
-    "ultimaActualizacion": "2025-12-12T21:27:19.669Z",
+    "ultimaActualizacion": "2025-12-20T02:01:34.459Z",
     "version": "3.0"
 }
