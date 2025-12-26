@@ -59,7 +59,8 @@
             "keywords": [
                 "donacion",
                 "donar",
-                "colecta"
+                "colecta", 
+                "donación"
             ],
             "habilitado": true,
             "horarioSemana": "Lunes a Viernes: 8:00 AM - 17:00 PM",
