@@ -66,21 +66,6 @@
             "agendamiento": "No es necesario agendar, lo puede hacer directamente en las instalaciones de Cruz Roja Imbabura en los horarios establecidos.\nPara más información sobre requisitos y beneficios para donar sangre lo encuentra en el siguiente enlace: 👉 https://cruzrojaimbabura.org.ec/donar-sangre/ "
         },
         {
-            "id": "1765548272499",
-            "tipo": "salud",
-            "nombre": "Ecografía",
-            "contacto": " http://wa.me/593994349535",
-            "keywords": [
-                "ecografía",
-                "eco"
-            ],
-            "habilitado": true,
-            "horarioSemana": "Rotativo",
-            "horarioFinSemana": "No aplica",
-            "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento a este número de WhatsApp http://wa.me/593994349535 en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida. El personal verificará la disponibilidad del horario y se contactará inmediatamente."
-        },
-        {
             "id": "1765566734319",
             "tipo": "salud",
             "nombre": "Pediatría",
@@ -283,8 +268,24 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1766765922578",
+            "tipo": "salud",
+            "nombre": "Ecografía",
+            "contacto": "http://wa.me/593994349535",
+            "keywords": [
+                "eco",
+                "ecografia",
+                "ecografía"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Rotativo",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2025-12-20T02:18:33.972Z",
+    "ultimaActualizacion": "2025-12-26T16:18:51.523Z",
     "version": "3.0"
 }
