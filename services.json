@@ -43,7 +43,10 @@
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
             "keywords": [
                 "PAB",
-                "auxilios"
+                "auxilios",
+                "cursos",
+                "curso",
+                "capacitación"
             ],
             "habilitado": true,
             "fechasRealizacion": "6-7-14-15 de Diciembre 2025",
@@ -59,7 +62,7 @@
             "keywords": [
                 "donacion",
                 "donar",
-                "colecta", 
+                "colecta",
                 "donación"
             ],
             "habilitado": true,
@@ -160,21 +163,6 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
-        },
-        {
-            "id": "1765568388145",
-            "tipo": "salud",
-            "nombre": "Capacitación",
-            "contacto": "https:wa.me/593995127034",
-            "keywords": [
-                "cursos",
-                "capacitación"
-            ],
-            "habilitado": true,
-            "horarioSemana": "",
-            "horarioFinSemana": "",
-            "horarioFeriado": "",
-            "agendamiento": "Para más información e inscripciones comunicarse directamente al siguiente número de WhatsApp:"
         },
         {
             "id": "1765568585453",
@@ -289,6 +277,6 @@
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2025-12-26T16:18:51.523Z",
+    "ultimaActualizacion": "2025-12-29T14:46:37.335Z",
     "version": "3.0"
 }
