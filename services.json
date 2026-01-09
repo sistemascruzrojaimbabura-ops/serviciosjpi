@@ -11,7 +11,7 @@
                 "promocion laboratorio",
                 "diciembre"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechaInicio": "2025-12-01",
             "fechaFin": "2025-12-31",
             "precioNormal": "35",
@@ -279,6 +279,6 @@
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2026-01-09T13:56:43.228Z",
+    "ultimaActualizacion": "2026-01-09T14:39:44.032Z",
     "version": "3.0"
 }
