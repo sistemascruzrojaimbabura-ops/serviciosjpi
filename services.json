@@ -255,7 +255,7 @@
                 "ginecóloga"
             ],
             "habilitado": true,
-            "horarioSemana": ": lunes a viernes: 8:00 a 18:00",
+            "horarioSemana": ": lunes a viernes: 10:00 a 16:00",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
@@ -277,6 +277,6 @@
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2026-01-09T22:29:40.991Z",
+    "ultimaActualizacion": "2026-01-09T22:44:48.124Z",
     "version": "3.0"
 }
