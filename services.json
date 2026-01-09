@@ -52,7 +52,7 @@
             "fechasRealizacion": "24-25-31 de Enero y 1 de Febrero",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
-            "descripcion": "Curso Básico de Primeros Auxilios Teórico Duración 40 horas - Práctico con certificado avalado por Cruz Roja Junta Provincial de Imbabura"
+            "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico\nDuración 40 horas\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         },
         {
             "id": "1765547791412",
@@ -279,6 +279,6 @@
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2026-01-09T14:39:44.032Z",
+    "ultimaActualizacion": "2026-01-09T15:40:43.983Z",
     "version": "3.0"
 }
