@@ -49,10 +49,10 @@
                 "capacitación"
             ],
             "habilitado": true,
-            "fechasRealizacion": "6-7-14-15 de Diciembre 2025",
+            "fechasRealizacion": "24-25-31 de Enero y 1 de Febrero",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
-            "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico con certificado avalado por Cruz Roja Junta Provincial de Imbabura"
+            "descripcion": "Curso Básico de Primeros Auxilios Teórico Duración 40 horas - Práctico con certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         },
         {
             "id": "1765547791412",
@@ -81,8 +81,8 @@
                 "pediatra"
             ],
             "habilitado": true,
-            "horarioSemana": "lunes: 15:00 a 18:00 – jueves: 9:00 a 13:00",
-            "horarioFinSemana": "sábado 10:00 a 12:00",
+            "horarioSemana": "lunes a viernes: 16:30 a 18:00",
+            "horarioFinSemana": "sábado 08:00 a 12:00",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente"
         },
@@ -156,7 +156,9 @@
             "keywords": [
                 "dermatóloga",
                 "dermatología",
-                "piel"
+                "piel",
+                "dermatologa",
+                "deramtologia"
             ],
             "habilitado": true,
             "horarioSemana": "martes y jueves: 15:00 a 18:00",
@@ -277,6 +279,6 @@
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
         }
     ],
-    "ultimaActualizacion": "2025-12-29T14:46:37.335Z",
+    "ultimaActualizacion": "2026-01-09T13:56:43.228Z",
     "version": "3.0"
 }
