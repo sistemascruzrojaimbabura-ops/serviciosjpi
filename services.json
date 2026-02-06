@@ -191,7 +191,7 @@
                 "gastroenterología"
             ],
             "habilitado": true,
-            "horarioSemana": "Solo martes y jueves: 11:00 a 14:30",
+            "horarioSemana": "Miércoles: 14:00 a 18:30",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
@@ -275,8 +275,23 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+        },
+        {
+            "id": "1770397101174",
+            "tipo": "salud",
+            "nombre": "Pruebas de ADN",
+            "contacto": "https:wa.me/593984755477",
+            "keywords": [
+                "ADN",
+                "paternidad"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Lunes a Viernes: Unicamente a las 11:00 AM y 15:00 PM",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para más información sobre requisitos y precios comunicarse con el siguiente número de WhatsApp https:wa.me/593984755477 el personal de laboratorio estará encantado de ayudarle."
         }
     ],
-    "ultimaActualizacion": "2026-01-09T22:44:48.124Z",
+    "ultimaActualizacion": "2026-02-06T16:59:51.255Z",
     "version": "3.0"
 }
