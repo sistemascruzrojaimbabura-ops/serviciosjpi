@@ -46,7 +46,7 @@
                 "curso",
                 "capacitación"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "24-25-31 de Enero y 1 de Febrero",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
@@ -307,8 +307,25 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente. (Ej: Depilación Laser, Juan Perez, 10h00)"
+        },
+        {
+            "id": "1770412749513",
+            "tipo": "capacitacion",
+            "nombre": "Curso de Inyectología y Farmacología",
+            "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
+            "keywords": [
+                "inyectología",
+                "inyectologia",
+                "farmacologia",
+                "farmacología"
+            ],
+            "habilitado": true,
+            "fechasRealizacion": "15 -16 y 17 de Febrero",
+            "horario": "8:00 AM - 17:00 PM",
+            "costo": "$50",
+            "descripcion": "Duración 30 horas\nDirigido a todo público\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         }
     ],
-    "ultimaActualizacion": "2026-02-06T20:54:07.894Z",
+    "ultimaActualizacion": "2026-02-06T21:19:39.913Z",
     "version": "3.0"
 }
