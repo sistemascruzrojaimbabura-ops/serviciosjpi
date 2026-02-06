@@ -290,8 +290,25 @@
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para más información sobre requisitos y precios puede acercarse a las instalaciones de Cruz Roja Imbabura o comunicarse con el siguiente número de WhatsApp https:wa.me/593984755477 el personal de laboratorio estará encantado de ayudarle."
+        },
+        {
+            "id": "1770411189236",
+            "tipo": "salud",
+            "nombre": "Depilación Láser",
+            "contacto": "https://wa.me/593994349535",
+            "keywords": [
+                "depilacion",
+                "depilación",
+                "láser",
+                "laser"
+            ],
+            "habilitado": true,
+            "horarioSemana": "Luneas a Viernes 09:00 AM - 17:00 PM",
+            "horarioFinSemana": "No aplica",
+            "horarioFeriado": "No aplica",
+            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente. (Ej: Depilación Laser, Juan Perez, 10h00)"
         }
     ],
-    "ultimaActualizacion": "2026-02-06T17:33:03.784Z",
+    "ultimaActualizacion": "2026-02-06T20:54:07.894Z",
     "version": "3.0"
 }
