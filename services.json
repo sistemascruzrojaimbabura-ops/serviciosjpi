@@ -286,8 +286,8 @@
                 "paternidad"
             ],
             "habilitado": true,
-            "horarioSemana": "Lunes a Viernes: Unicamente a las 11:00 AM o 15:00 PM",
-            "horarioFinSemana": "No aplica",
+            "horarioSemana": "Lunes a Viernes: 07:00 a 18:00",
+            "horarioFinSemana": "Sábado y Domingo: 7:00 AM - 15:30 PM",
             "horarioFeriado": "No aplica",
             "agendamiento": "Para más información sobre requisitos y precios puede acercarse a las instalaciones de Cruz Roja Imbabura o comunicarse con el siguiente número de WhatsApp https:wa.me/593984755477 el personal de laboratorio estará encantado de ayudarle."
         },
@@ -326,6 +326,6 @@
             "descripcion": "Duración 30 horas\nDirigido a todo público\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         }
     ],
-    "ultimaActualizacion": "2026-02-06T21:19:39.913Z",
+    "ultimaActualizacion": "2026-02-11T19:56:20.128Z",
     "version": "3.0"
 }
