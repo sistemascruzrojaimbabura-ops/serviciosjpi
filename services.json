@@ -319,13 +319,13 @@
                 "farmacologia",
                 "farmacología"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "15 -16 y 17 de Febrero",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "$50",
             "descripcion": "Duración 30 horas\nDirigido a todo público\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         }
     ],
-    "ultimaActualizacion": "2026-02-11T20:17:11.291Z",
+    "ultimaActualizacion": "2026-02-23T17:19:09.231Z",
     "version": "3.0"
 }
