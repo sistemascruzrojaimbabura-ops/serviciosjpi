@@ -324,8 +324,25 @@
             "horario": "8:00 AM - 17:00 PM",
             "costo": "$50",
             "descripcion": "Duración 30 horas\nDirigido a todo público\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
+        },
+        {
+            "id": "1773155575622",
+            "tipo": "capacitacion",
+            "nombre": "Curso PAB, Reanimación Cardiopulmunar y uso de DEA",
+            "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
+            "keywords": [
+                "PAB",
+                "DEA",
+                "reanimación",
+                "reanimacion"
+            ],
+            "habilitado": true,
+            "fechasRealizacion": "22,23,29 y 30 de Marzo",
+            "horario": "8:00 AM - 17:00 PM",
+            "costo": "49.99",
+            "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público"
         }
     ],
-    "ultimaActualizacion": "2026-02-25T14:27:01.263Z",
+    "ultimaActualizacion": "2026-03-10T15:13:10.167Z",
     "version": "3.0"
 }
