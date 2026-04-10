@@ -341,8 +341,25 @@
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público"
+        },
+        {
+            "id": "1775850352121",
+            "tipo": "promocion",
+            "nombre": "Campaña de Traumatología",
+            "contacto": "https:wa.me/593985121244",
+            "keywords": [
+                "traumatologia",
+                "traumatologa",
+                "traumatología"
+            ],
+            "habilitado": true,
+            "fechaInicio": "2026-04-21",
+            "fechaFin": "2026-04-25",
+            "precioNormal": "30",
+            "precioPromocion": "25",
+            "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui"
         }
     ],
-    "ultimaActualizacion": "2026-03-10T15:13:10.167Z",
+    "ultimaActualizacion": "2026-04-10T19:46:07.229Z",
     "version": "3.0"
 }
