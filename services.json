@@ -47,7 +47,7 @@
                 "capacitación"
             ],
             "habilitado": true,
-            "fechasRealizacion": "21-22 /28-29 de Marzo",
+            "fechasRealizacion": "16-17 /23-24 de Mayo",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico\nDuración 40 horas\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
@@ -328,16 +328,15 @@
         {
             "id": "1773155575622",
             "tipo": "capacitacion",
-            "nombre": "Curso PAB, Reanimación Cardiopulmunar y uso de DEA",
+            "nombre": "Curso Emergencias Extra Hospitalarias",
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
             "keywords": [
-                "PAB",
-                "DEA",
-                "reanimación",
-                "reanimacion"
+                "extra",
+                "hospitalarias",
+                "curso"
             ],
             "habilitado": true,
-            "fechasRealizacion": "22,23,29 y 30 de Marzo",
+            "fechasRealizacion": "24, 25 y 31 de Mayo",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público"
@@ -360,6 +359,6 @@
             "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui"
         }
     ],
-    "ultimaActualizacion": "2026-04-10T19:46:07.229Z",
+    "ultimaActualizacion": "2026-05-07T15:25:41.518Z",
     "version": "3.0"
 }
