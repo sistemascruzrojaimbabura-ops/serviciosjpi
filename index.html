@@ -876,9 +876,30 @@
             }
         }
 
+        function getPromotionStatus(servicio) {
+            if (servicio.tipo !== 'promocion' || !servicio.fechaFin) {
+                return null;
+            }
+
+            const endDate = new Date(`${servicio.fechaFin}T23:59:59`);
+            return new Date() > endDate ? 'expirada' : 'vigente';
+        }
+
         function isExpired(servicio) {
-            if (servicio.tipo !== 'promocion' || !servicio.fechaFin) return false;
-            return new Date() > new Date(servicio.fechaFin);
+            return getPromotionStatus(servicio) === 'expirada';
+        }
+
+        function addPromotionStatus(servicio) {
+            if (servicio.tipo !== 'promocion') {
+                return { ...servicio };
+            }
+
+            const estadoPromocion = getPromotionStatus(servicio) || 'sin_fecha_fin';
+            return {
+                ...servicio,
+                estadoPromocion: estadoPromocion,
+                promocionVigente: estadoPromocion === 'vigente'
+            };
         }
 
         function renderServices() {
@@ -1109,7 +1130,7 @@
 
         function downloadJSON() {
             const data = {
-                servicios: servicios,
+                servicios: servicios.map(addPromotionStatus),
                 ultimaActualizacion: new Date().toISOString(),
                 version: "3.0"
             };
