@@ -1,3 +1,4 @@
+
 {
     "servicios": [
         {
@@ -16,7 +17,9 @@
             "fechaFin": "2025-12-31",
             "precioNormal": "35",
             "precioPromocion": "20",
-            "descripcion": "Consulta Medicina General + Revisión Exámenes y Panel ETS"
+            "descripcion": "Consulta Medicina General + Revisión Exámenes y Panel ETS",
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         },
         {
             "id": "1764282346921",
@@ -356,9 +359,11 @@
             "fechaFin": "2026-04-25",
             "precioNormal": "30",
             "precioPromocion": "25",
-            "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui"
+            "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui",
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-05-07T15:25:41.518Z",
+    "ultimaActualizacion": "2026-05-20T21:08:00.880Z",
     "version": "3.0"
 }
