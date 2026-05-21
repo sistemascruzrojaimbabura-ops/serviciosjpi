@@ -1,4 +1,3 @@
-
 {
     "servicios": [
         {
@@ -76,7 +75,7 @@
             "id": "1765566734319",
             "tipo": "salud",
             "nombre": "Pediatría",
-            "contacto": "http://wa.me/593994349535",
+            "contacto": "https://wa.me/593994349535",
             "keywords": [
                 "pediatría",
                 "pediatra"
@@ -85,13 +84,13 @@
             "horarioSemana": "lunes a viernes: 16:30 a 18:00",
             "horarioFinSemana": "sábado 08:00 a 12:00",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente"
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Pediatría, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765567295223",
             "tipo": "salud",
             "nombre": "Medicina General",
-            "contacto": "http://wa.me/593994349535",
+            "contacto": "https://wa.me/593994349535",
             "keywords": [
                 "medicina",
                 "doctor",
@@ -102,13 +101,13 @@
             "horarioSemana": "lunes a viernes: 8:00 a 18:00",
             "horarioFinSemana": "sábados: 8:00 a 11:00",
             "horarioFeriado": "No aplica.",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Medicina General, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765567472053",
             "tipo": "salud",
             "nombre": "Fisiatría",
-            "contacto": "http://wa.me/593994349535",
+            "contacto": "https://wa.me/593994349535",
             "keywords": [
                 "fisiatría",
                 "fisiatra"
@@ -117,7 +116,7 @@
             "horarioSemana": "lunes a viernes: 7:00 a 9:00",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento  en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Fisiatría, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765567834581",
@@ -147,7 +146,7 @@
             "horarioSemana": "lunes a viernes: 7:00 a 18:00",
             "horarioFinSemana": "sábado 7:00 a 12:00.",
             "horarioFeriado": "No aplica.",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593993405842 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Odontología, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765568190295",
@@ -165,7 +164,7 @@
             "horarioSemana": "martes y jueves: 15:00 a 18:00",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Dermatología, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765568585453",
@@ -187,7 +186,7 @@
             "id": "1765568716955",
             "tipo": "salud",
             "nombre": "Gastroenterología",
-            "contacto": "http://wa.me/593994349535 ",
+            "contacto": "https://wa.me/593994349535 ",
             "keywords": [
                 "gastro",
                 "gastroenterólogo",
@@ -197,7 +196,7 @@
             "horarioSemana": "Miércoles: 14:00 a 18:30",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Gastroenterología, Juan Pérez, Miércoles a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765570538431",
@@ -213,7 +212,7 @@
             "horarioSemana": "Lunes a viernes de 8 a 10 am, martes - miércoles y viernes de 4 a 6 pm",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida. El personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Traumatología, Juan Pérez, Lunes a las 08:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1765572070549",
@@ -250,7 +249,7 @@
             "id": "1766197110772",
             "tipo": "salud",
             "nombre": "Ginecología",
-            "contacto": "http://wa.me/593994349535",
+            "contacto": "https://wa.me/593994349535",
             "keywords": [
                 "ginecología",
                 "ginecólogo",
@@ -258,16 +257,16 @@
                 "ginecóloga"
             ],
             "habilitado": true,
-            "horarioSemana": ": lunes a viernes: 10:00 a 16:00",
+            "horarioSemana": "Lunes a Viernes: 10:00 a 16:00",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Ginecología, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1766765922578",
             "tipo": "salud",
             "nombre": "Ecografía",
-            "contacto": "http://wa.me/593994349535",
+            "contacto": "https://wa.me/593994349535",
             "keywords": [
                 "eco",
                 "ecografia",
@@ -277,7 +276,7 @@
             "horarioSemana": "Rotativo",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente."
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Eco Abdominal, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1770397101174",
@@ -309,7 +308,7 @@
             "horarioSemana": "Luneas a Viernes 09:00 AM - 17:00 PM",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento en el cual se debe colocar el servicio que se desea agendar, el nombre del paciente y la hora requerida el personal verificará la disponibilidad del horario y se contactará inmediatamente. (Ej: Depilación Laser, Juan Perez, 10h00)"
+            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Depilación Láser, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
             "id": "1770412749513",
@@ -364,6 +363,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-05-20T21:08:00.880Z",
+    "ultimaActualizacion": "2026-05-21T15:20:37.858Z",
     "version": "3.0"
 }
