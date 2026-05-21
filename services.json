@@ -8,15 +8,14 @@
             "keywords": [
                 "Promocion",
                 "paquete",
-                "Chequeo Mamá",
-                "Mamá"
+                "chequeo mamá"
             ],
             "habilitado": true,
             "fechaInicio": "2026-05-01",
             "fechaFin": "2026-05-31",
             "precioNormal": "52.75",
             "precioPromocion": "29.99",
-            "descripcion": "Chequeo mamá",
+            "descripcion": "Esta promoción esta vigente por el mes de mamá, debes acercarte personalmente al laboratorio de Cruz Roja Imbabura de Lunes a Viernes de 7:00 AM - 18:00 PM , Fines de semana: 7:00 AM - 15:30 PM o  Feriados: 7:00 AM - 12:00 PM, si necesitas más información puedes comunicarte directamente con el personal de laboratorio al siguiente número:",
             "estadoPromocion": "vigente",
             "promocionVigente": true
         },
@@ -31,7 +30,7 @@
                 "tipificación"
             ],
             "habilitado": true,
-            "horarioSemana": "Luneas a Viernes: 7:00 AM - 18:00 PM",
+            "horarioSemana": "Lunes a Viernes: 7:00 AM - 18:00 PM",
             "horarioFinSemana": "Sábado y Domingo: 7:00 AM - 15:30 PM",
             "horarioFeriado": "7:00 AM - 12:00 PM",
             "agendamiento": "No es necesario agendar turno"
@@ -363,6 +362,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-05-21T15:39:18.347Z",
+    "ultimaActualizacion": "2026-05-21T17:25:15.193Z",
     "version": "3.0"
 }
