@@ -16,8 +16,8 @@
             "precioNormal": "52.75",
             "precioPromocion": "29.99",
             "descripcion": "Esta promoción esta vigente por el mes de mamá, debes acercarte personalmente al laboratorio de Cruz Roja Imbabura de Lunes a Viernes de 7:00 AM - 18:00 PM , Fines de semana: 7:00 AM - 15:30 PM o  Feriados: 7:00 AM - 12:00 PM, si necesitas más información puedes comunicarte directamente con el personal de laboratorio al siguiente número:",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         },
         {
             "id": "1764282346921",
@@ -65,8 +65,8 @@
                 "donación"
             ],
             "habilitado": true,
-            "horarioSemana": "Lunes a Viernes: 8:00 AM - 17:00 PM",
-            "horarioFinSemana": "Sábado: 8:00 AM - 12:00 PM",
+            "horarioSemana": "Lunes a Viernes: 8:00 AM - 17:30 PM",
+            "horarioFinSemana": "Sábado: 8:00 AM - 11:00 PM",
             "horarioFeriado": "No aplica",
             "agendamiento": "No es necesario agendar, lo puede hacer directamente en las instalaciones de Cruz Roja Imbabura en los horarios establecidos.\nPara más información sobre requisitos y beneficios para donar sangre lo encuentra en el siguiente enlace: 👉 https://cruzrojaimbabura.org.ec/donar-sangre/ "
         },
@@ -362,6 +362,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-05-21T17:25:15.193Z",
+    "ultimaActualizacion": "2026-06-02T16:29:04.350Z",
     "version": "3.0"
 }
