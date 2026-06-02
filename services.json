@@ -3,21 +3,23 @@
         {
             "id": "1764282199021",
             "tipo": "promocion",
-            "nombre": "Promocion Chequeo Mamá",
+            "nombre": "Promocion Papá en Control",
             "contacto": "https://wa.me/593984755477",
             "keywords": [
                 "Promocion",
                 "paquete",
-                "chequeo mamá"
+                "papá",
+                "promoción",
+                "papa"
             ],
             "habilitado": true,
-            "fechaInicio": "2026-05-01",
-            "fechaFin": "2026-05-31",
-            "precioNormal": "52.75",
+            "fechaInicio": "2026-06-01",
+            "fechaFin": "2026-06-30",
+            "precioNormal": "52.25",
             "precioPromocion": "29.99",
-            "descripcion": "Esta promoción esta vigente por el mes de mamá, debes acercarte personalmente al laboratorio de Cruz Roja Imbabura de Lunes a Viernes de 7:00 AM - 18:00 PM , Fines de semana: 7:00 AM - 15:30 PM o  Feriados: 7:00 AM - 12:00 PM, si necesitas más información puedes comunicarte directamente con el personal de laboratorio al siguiente número:",
-            "estadoPromocion": "expirada",
-            "promocionVigente": false
+            "descripcion": "Esta promoción esta vigente por el mes de papá, debes acercarte personalmente al laboratorio de Cruz Roja Imbabura y tener más de 40 años de Lunes a Viernes de 7:00 AM - 18:00 PM , Fines de semana: 7:00 AM - 15:30 PM o  Feriados: 7:00 AM - 12:00 PM, si necesitas más información puedes comunicarte directamente con el personal de laboratorio al siguiente número:",
+            "estadoPromocion": "vigente",
+            "promocionVigente": true
         },
         {
             "id": "1764282346921",
@@ -362,6 +364,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-06-02T16:29:04.350Z",
+    "ultimaActualizacion": "2026-06-02T21:29:46.546Z",
     "version": "3.0"
 }
