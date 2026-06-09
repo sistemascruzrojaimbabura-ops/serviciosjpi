@@ -49,7 +49,7 @@
                 "curso",
                 "capacitación"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "16-17 /23-24 de Mayo",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
@@ -338,7 +338,7 @@
                 "hospitalarias",
                 "curso"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "24, 25 y 31 de Mayo",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
@@ -364,6 +364,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-06-02T21:29:46.546Z",
+    "ultimaActualizacion": "2026-06-09T21:48:55.930Z",
     "version": "3.0"
 }
