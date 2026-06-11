@@ -49,8 +49,8 @@
                 "curso",
                 "capacitación"
             ],
-            "habilitado": false,
-            "fechasRealizacion": "16-17 /23-24 de Mayo",
+            "habilitado": true,
+            "fechasRealizacion": "20-21 /27-28 de Junio",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico\nDuración 40 horas\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
@@ -364,6 +364,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-06-09T21:48:55.930Z",
+    "ultimaActualizacion": "2026-06-11T21:49:32.466Z",
     "version": "3.0"
 }
