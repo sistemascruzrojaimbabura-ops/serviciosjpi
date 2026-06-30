@@ -12,7 +12,7 @@
                 "promoción",
                 "papa"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechaInicio": "2026-06-01",
             "fechaFin": "2026-06-30",
             "precioNormal": "52.25",
@@ -377,13 +377,13 @@
             "habilitado": true,
             "fechaInicio": "2026-06-15",
             "fechaFin": "2026-08-31",
-            "precioNormal": "$60",
-            "precioPromocion": "$54 la primera semana",
+            "precioNormal": "",
+            "precioPromocion": "$60",
             "descripcion": "Reciba un cordial saludo de parte de la Cruz Roja Ecuatoriana Junta Provincial  Imbabura.\nEste año nos innovamos  CAVASOJ 2026 te da la bienvenida, para mayor  información e inscripciones contáctanos al siguiente número: 0990445379",
             "estadoPromocion": "vigente",
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-06-15T19:19:17.198Z",
+    "ultimaActualizacion": "2026-06-30T14:12:25.194Z",
     "version": "3.0"
 }
