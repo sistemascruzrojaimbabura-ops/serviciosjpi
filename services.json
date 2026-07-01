@@ -1,27 +1,6 @@
 {
     "servicios": [
         {
-            "id": "1764282199021",
-            "tipo": "promocion",
-            "nombre": "Promocion Papá en Control",
-            "contacto": "https://wa.me/593984755477",
-            "keywords": [
-                "Promocion",
-                "paquete",
-                "papá",
-                "promoción",
-                "papa"
-            ],
-            "habilitado": false,
-            "fechaInicio": "2026-06-01",
-            "fechaFin": "2026-06-30",
-            "precioNormal": "52.25",
-            "precioPromocion": "29.99",
-            "descripcion": "Esta promoción esta vigente por el mes de papá, debes acercarte personalmente al laboratorio de Cruz Roja Imbabura y tener más de 40 años de Lunes a Viernes de 7:00 AM - 18:00 PM , Fines de semana: 7:00 AM - 15:30 PM o  Feriados: 7:00 AM - 12:00 PM, si necesitas más información puedes comunicarte directamente con el personal de laboratorio al siguiente número:",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
-        },
-        {
             "id": "1764282346921",
             "tipo": "salud",
             "nombre": "Laboratorio Clinico",
@@ -347,21 +326,21 @@
         {
             "id": "1775850352121",
             "tipo": "promocion",
-            "nombre": "Campaña de Traumatología",
+            "nombre": "Jornadas Médicas Solidarias",
             "contacto": "https:wa.me/593985121244",
             "keywords": [
-                "traumatologia",
-                "traumatologa",
-                "traumatología"
+                "médicas",
+                "jornadas",
+                "solidarias"
             ],
             "habilitado": true,
-            "fechaInicio": "2026-04-21",
-            "fechaFin": "2026-04-25",
+            "fechaInicio": "2026-07-02",
+            "fechaFin": "2026-07-04",
             "precioNormal": "30",
             "precioPromocion": "25",
-            "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui",
-            "estadoPromocion": "expirada",
-            "promocionVigente": false
+            "descripcion": "Rastreo Ecográfico, Desintometría Ósea y Signos Vitales\nAgenda tu cita!!",
+            "estadoPromocion": "vigente",
+            "promocionVigente": true
         },
         {
             "id": "1781550810733",
@@ -384,6 +363,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-06-30T14:12:25.194Z",
+    "ultimaActualizacion": "2026-07-01T19:48:10.205Z",
     "version": "3.0"
 }
