@@ -19,8 +19,8 @@
         {
             "id": "1764340359831",
             "tipo": "capacitacion",
-            "nombre": "Curso Primeros Auxilios",
-            "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
+            "nombre": "Curso Primeros Auxilios Básicos y Soporte Vital Básico",
+            "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https://wa.me/593995127034",
             "keywords": [
                 "PAB",
                 "auxilios",
@@ -29,10 +29,10 @@
                 "capacitación"
             ],
             "habilitado": true,
-            "fechasRealizacion": "20-21 /27-28 de Junio",
-            "horario": "8:00 AM - 17:00 PM",
+            "fechasRealizacion": "18-25 de julio y 1 agosto",
+            "horario": "8:00 AM - 17:30 PM",
             "costo": "49.99",
-            "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico\nDuración 40 horas\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
+            "descripcion": "Curso Básico de Primeros Auxilios Teórico - Práctico\nDuración 30 horas\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         },
         {
             "id": "1765547791412",
@@ -324,25 +324,6 @@
             "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público"
         },
         {
-            "id": "1775850352121",
-            "tipo": "promocion",
-            "nombre": "Jornadas Médicas Solidarias",
-            "contacto": "https:wa.me/593985121244",
-            "keywords": [
-                "médicas",
-                "jornadas",
-                "solidarias"
-            ],
-            "habilitado": true,
-            "fechaInicio": "2026-07-02",
-            "fechaFin": "2026-07-04",
-            "precioNormal": "30",
-            "precioPromocion": "25",
-            "descripcion": "Rastreo Ecográfico, Desintometría Ósea y Signos Vitales\nAgenda tu cita!!",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
-        },
-        {
             "id": "1781550810733",
             "tipo": "promocion",
             "nombre": "Vacacional Cavasoj 2026",
@@ -361,8 +342,49 @@
             "descripcion": "Reciba un cordial saludo de parte de la Cruz Roja Ecuatoriana Junta Provincial  Imbabura.\nEste año nos innovamos  CAVASOJ 2026 te da la bienvenida, para mayor  información e inscripciones contáctanos al siguiente número: 0990445379",
             "estadoPromocion": "vigente",
             "promocionVigente": true
+        },
+        {
+            "id": "1783433834403",
+            "tipo": "promocion",
+            "nombre": "Evaluación Integral Masculina",
+            "contacto": "https://wa.me/593984755477",
+            "keywords": [
+                "integral",
+                "masculina",
+                "promocion",
+                "promoción"
+            ],
+            "habilitado": true,
+            "fechaInicio": "2026-07-01",
+            "fechaFin": "2026-07-31",
+            "precioNormal": "37.50",
+            "precioPromocion": "29.99",
+            "descripcion": "- Biometría Hemática\n- Glucosa Basal\n- Triglicéridos\n- Colesterol\n- Ácido Úrico\n- Antígeno Prostático Específico (PSA Total)\nImportante: La promoción aplica únicamente al paquete completo de exámenes indicado.",
+            "estadoPromocion": "vigente",
+            "promocionVigente": true
+        },
+        {
+            "id": "1783434011087",
+            "tipo": "promocion",
+            "nombre": "Salud Preventiva Femenina",
+            "contacto": "https://wa.me/593984755477",
+            "keywords": [
+                "salud",
+                "preventiva",
+                "femenina",
+                "promocion",
+                "promoción"
+            ],
+            "habilitado": true,
+            "fechaInicio": "2026-07-01",
+            "fechaFin": "2026-07-31",
+            "precioNormal": "39.99",
+            "precioPromocion": "29.99",
+            "descripcion": "Promoción incluye:\n- Hormona Estimulante del Tiroides (TSH)\n- Tiroxina T4 Libre (FT4)\n- Biometría Hemática\n- Glucosa Basal\n- Ácido Úrico\n- Colesterol\n- Triglicéridos\nImportante: La promoción aplica únicamente al paquete completo de exámenes indicado.",
+            "estadoPromocion": "vigente",
+            "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-01T19:48:10.205Z",
+    "ultimaActualizacion": "2026-07-07T14:25:39.506Z",
     "version": "3.0"
 }
