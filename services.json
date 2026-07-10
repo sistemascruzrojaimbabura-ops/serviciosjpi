@@ -301,7 +301,7 @@
                 "farmacologia",
                 "farmacología"
             ],
-            "habilitado": false,
+            "habilitado": true,
             "fechasRealizacion": "15 -16 y 17 de Febrero",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "$50",
@@ -385,6 +385,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-07T14:25:39.506Z",
+    "ultimaActualizacion": "2026-07-10T16:11:05.232Z",
     "version": "3.0"
 }
