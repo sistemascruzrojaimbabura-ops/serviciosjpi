@@ -215,7 +215,7 @@
             "id": "1765573355082",
             "tipo": "voluntariado",
             "nombre": "Voluntariado",
-            "contacto": "Cualquier duda o inquietud puede comunicarse con el coordinador de voluntariado al siguiente número de WhatsApp https:wa.me/593993999138",
+            "contacto": "Cualquier duda o inquietud puede comunicarse con el coordinador de voluntariado al siguiente número de WhatsApp https://wa.me/593993999138",
             "keywords": [
                 "voluntariado",
                 "voluntario",
@@ -223,7 +223,7 @@
             ],
             "habilitado": true,
             "descripcion": "Para obtener la información detallada de los requisitos necesarios para ser voluntario de Cruz Roja Junta Provincial Imbabura debes ingresar al siguiente enlace, allí se detallan los pasos a seguir:",
-            "linkInfo": "https://cruzrojaimbabura.org.ec/voluntariado/"
+            "linkInfo": "https://cruzrojaimbabura.org.ec/voluntariado.html"
         },
         {
             "id": "1766197110772",
@@ -385,6 +385,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-10T16:11:05.232Z",
+    "ultimaActualizacion": "2026-07-15T14:36:17.842Z",
     "version": "3.0"
 }
