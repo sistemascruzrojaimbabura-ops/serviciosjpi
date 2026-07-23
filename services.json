@@ -49,7 +49,7 @@
             "horarioSemana": "Lunes a Viernes: 8:00 AM - 17:30 PM",
             "horarioFinSemana": "Sábado: 8:00 AM - 11:00 PM",
             "horarioFeriado": "No aplica",
-            "agendamiento": "No es necesario agendar, lo puede hacer directamente en las instalaciones de Cruz Roja Imbabura en los horarios establecidos.\nPara más información sobre requisitos y beneficios para donar sangre lo encuentra en el siguiente enlace: 👉 https://cruzrojaimbabura.org.ec/donar-sangre/ "
+            "agendamiento": "No es necesario agendar, lo puede hacer directamente en las instalaciones de Cruz Roja Imbabura en los horarios establecidos.\nPara más información sobre requisitos y beneficios para donar sangre lo encuentra en el siguiente enlace: 👉 https://cruzrojaimbabura.org.ec/donar-sangre/ \n🏥Si desea conocer la ubicación de las brigadas en la ciudad escriba *brigada extramural*"
         },
         {
             "id": "1765566734319",
@@ -353,6 +353,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-23T13:50:11.338Z",
+    "ultimaActualizacion": "2026-07-23T15:00:38.462Z",
     "version": "3.0"
 }
