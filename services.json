@@ -99,21 +99,6 @@
             "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Fisiatría, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
-            "id": "1765567834581",
-            "tipo": "salud",
-            "nombre": "Rehabilitación Física",
-            "contacto": "062950888 extensión 106",
-            "keywords": [
-                "rehabilitación",
-                "rehabilitar"
-            ],
-            "habilitado": true,
-            "horarioSemana": "lunes a viernes: 7:00 a 18:00",
-            "horarioFinSemana": "sábado 8:00 a 12:00",
-            "horarioFeriado": "No aplica.",
-            "agendamiento": "Para contacto o más información llamar al número 062950888 extensión 106 o acercarse a la institución."
-        },
-        {
             "id": "1765567963799",
             "tipo": "salud",
             "nombre": "Odontología",
@@ -274,23 +259,6 @@
             "agendamiento": "Para más información sobre requisitos y precios puede acercarse a las instalaciones de Cruz Roja Imbabura o comunicarse con el siguiente número de WhatsApp https:wa.me/593984755477 el personal de laboratorio estará encantado de ayudarle."
         },
         {
-            "id": "1770411189236",
-            "tipo": "salud",
-            "nombre": "Depilación Láser",
-            "contacto": "https://wa.me/593994349535",
-            "keywords": [
-                "depilacion",
-                "depilación",
-                "láser",
-                "laser"
-            ],
-            "habilitado": true,
-            "horarioSemana": "Luneas a Viernes 09:00 AM - 17:00 PM",
-            "horarioFinSemana": "No aplica",
-            "horarioFeriado": "No aplica",
-            "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Depilación Láser, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
-        },
-        {
             "id": "1770412749513",
             "tipo": "capacitacion",
             "nombre": "Curso de Inyectología y Farmacología",
@@ -301,7 +269,7 @@
                 "farmacologia",
                 "farmacología"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "15 -16 y 17 de Febrero",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "$50",
@@ -385,6 +353,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-15T14:36:17.842Z",
+    "ultimaActualizacion": "2026-07-23T13:50:11.338Z",
     "version": "3.0"
 }
