@@ -261,7 +261,7 @@
         {
             "id": "1770412749513",
             "tipo": "capacitacion",
-            "nombre": "Curso de Inyectología y Farmacología",
+            "nombre": "Curso de Inyectología y Farmacología en Emergencias Extrahospitalarias",
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
             "keywords": [
                 "inyectología",
@@ -269,9 +269,9 @@
                 "farmacologia",
                 "farmacología"
             ],
-            "habilitado": false,
-            "fechasRealizacion": "15 -16 y 17 de Febrero",
-            "horario": "8:00 AM - 17:00 PM",
+            "habilitado": true,
+            "fechasRealizacion": "07,08 y 10 de agosto",
+            "horario": "8:00 AM - 17:30 PM",
             "costo": "$50",
             "descripcion": "Duración 30 horas\nDirigido a todo público\nCon certificado avalado por Cruz Roja Junta Provincial de Imbabura"
         },
@@ -353,6 +353,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-23T15:00:38.462Z",
+    "ultimaActualizacion": "2026-07-28T14:15:33.959Z",
     "version": "3.0"
 }
