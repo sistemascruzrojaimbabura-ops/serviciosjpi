@@ -22,11 +22,11 @@
             "nombre": "Curso Primeros Auxilios Básicos y Soporte Vital Básico",
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https://wa.me/593995127034",
             "keywords": [
-                "PAB",
-                "auxilios",
-                "cursos",
-                "curso",
-                "capacitación"
+                "Soporte",
+                "soporte",
+                "vital",
+                "básico",
+                "basico"
             ],
             "habilitado": true,
             "fechasRealizacion": "18-25 de julio y 1 agosto",
@@ -267,7 +267,8 @@
                 "inyectología",
                 "inyectologia",
                 "farmacologia",
-                "farmacología"
+                "farmacología",
+                "emergencias"
             ],
             "habilitado": true,
             "fechasRealizacion": "07,08 y 10 de agosto",
@@ -278,18 +279,18 @@
         {
             "id": "1773155575622",
             "tipo": "capacitacion",
-            "nombre": "Curso Emergencias Extra Hospitalarias",
+            "nombre": "Curso de Primeros Auxilios Básicos",
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
             "keywords": [
-                "extra",
-                "hospitalarias",
-                "curso"
+                "auxilios",
+                "basicos",
+                "básicos"
             ],
-            "habilitado": false,
-            "fechasRealizacion": "24, 25 y 31 de Mayo",
+            "habilitado": true,
+            "fechasRealizacion": "21, 22 y 28, 29 de Agosto",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
-            "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público"
+            "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público\nDuración: 40 Horas"
         },
         {
             "id": "1781550810733",
@@ -353,6 +354,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-07-28T14:15:33.959Z",
+    "ultimaActualizacion": "2026-07-30T16:27:05.219Z",
     "version": "3.0"
 }
