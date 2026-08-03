@@ -28,7 +28,7 @@
                 "básico",
                 "basico"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "18-25 de julio y 1 agosto",
             "horario": "8:00 AM - 17:30 PM",
             "costo": "49.99",
@@ -303,7 +303,7 @@
                 "cavasoj",
                 "inscripcion"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechaInicio": "2026-06-15",
             "fechaFin": "2026-08-31",
             "precioNormal": "",
@@ -323,14 +323,14 @@
                 "promocion",
                 "promoción"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechaInicio": "2026-07-01",
             "fechaFin": "2026-07-31",
             "precioNormal": "37.50",
             "precioPromocion": "29.99",
             "descripcion": "- Biometría Hemática\n- Glucosa Basal\n- Triglicéridos\n- Colesterol\n- Ácido Úrico\n- Antígeno Prostático Específico (PSA Total)\nImportante: La promoción aplica únicamente al paquete completo de exámenes indicado.",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         },
         {
             "id": "1783434011087",
@@ -344,16 +344,16 @@
                 "promocion",
                 "promoción"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechaInicio": "2026-07-01",
             "fechaFin": "2026-07-31",
             "precioNormal": "39.99",
             "precioPromocion": "29.99",
             "descripcion": "Promoción incluye:\n- Hormona Estimulante del Tiroides (TSH)\n- Tiroxina T4 Libre (FT4)\n- Biometría Hemática\n- Glucosa Basal\n- Ácido Úrico\n- Colesterol\n- Triglicéridos\nImportante: La promoción aplica únicamente al paquete completo de exámenes indicado.",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-07-30T16:27:05.219Z",
+    "ultimaActualizacion": "2026-08-03T21:12:24.370Z",
     "version": "3.0"
 }
