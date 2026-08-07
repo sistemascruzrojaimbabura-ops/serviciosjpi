@@ -291,69 +291,8 @@
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público\nDuración: 40 Horas"
-        },
-        {
-            "id": "1781550810733",
-            "tipo": "promocion",
-            "nombre": "Vacacional Cavasoj 2026",
-            "contacto": "https://wa.me/593990445379",
-            "keywords": [
-                "vacacional",
-                "vacacionales",
-                "cavasoj",
-                "inscripcion"
-            ],
-            "habilitado": false,
-            "fechaInicio": "2026-06-15",
-            "fechaFin": "2026-08-31",
-            "precioNormal": "",
-            "precioPromocion": "$60",
-            "descripcion": "Reciba un cordial saludo de parte de la Cruz Roja Ecuatoriana Junta Provincial  Imbabura.\nEste año nos innovamos  CAVASOJ 2026 te da la bienvenida, para mayor  información e inscripciones contáctanos al siguiente número: 0990445379",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
-        },
-        {
-            "id": "1783433834403",
-            "tipo": "promocion",
-            "nombre": "Evaluación Integral Masculina",
-            "contacto": "https://wa.me/593984755477",
-            "keywords": [
-                "integral",
-                "masculina",
-                "promocion",
-                "promoción"
-            ],
-            "habilitado": false,
-            "fechaInicio": "2026-07-01",
-            "fechaFin": "2026-07-31",
-            "precioNormal": "37.50",
-            "precioPromocion": "29.99",
-            "descripcion": "- Biometría Hemática\n- Glucosa Basal\n- Triglicéridos\n- Colesterol\n- Ácido Úrico\n- Antígeno Prostático Específico (PSA Total)\nImportante: La promoción aplica únicamente al paquete completo de exámenes indicado.",
-            "estadoPromocion": "expirada",
-            "promocionVigente": false
-        },
-        {
-            "id": "1783434011087",
-            "tipo": "promocion",
-            "nombre": "Salud Preventiva Femenina",
-            "contacto": "https://wa.me/593984755477",
-            "keywords": [
-                "salud",
-                "preventiva",
-                "femenina",
-                "promocion",
-                "promoción"
-            ],
-            "habilitado": false,
-            "fechaInicio": "2026-07-01",
-            "fechaFin": "2026-07-31",
-            "precioNormal": "39.99",
-            "precioPromocion": "29.99",
-            "descripcion": "Promoción incluye:\n- Hormona Estimulante del Tiroides (TSH)\n- Tiroxina T4 Libre (FT4)\n- Biometría Hemática\n- Glucosa Basal\n- Ácido Úrico\n- Colesterol\n- Triglicéridos\nImportante: La promoción aplica únicamente al paquete completo de exámenes indicado.",
-            "estadoPromocion": "expirada",
-            "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-08-03T21:12:24.370Z",
+    "ultimaActualizacion": "2026-08-07T16:13:57.366Z",
     "version": "3.0"
 }
