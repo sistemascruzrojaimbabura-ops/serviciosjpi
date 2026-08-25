@@ -270,7 +270,7 @@
                 "farmacología",
                 "emergencias"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "07,08 y 10 de agosto",
             "horario": "8:00 AM - 17:30 PM",
             "costo": "$50",
@@ -291,8 +291,27 @@
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público\nDuración: 40 Horas"
+        },
+        {
+            "id": "1787690361527",
+            "tipo": "promocion",
+            "nombre": "Especialista Traumatología y Ortopedia",
+            "contacto": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Pediatría, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente.",
+            "keywords": [
+                "campaña",
+                "traumatología",
+                "traumatologia"
+            ],
+            "habilitado": true,
+            "fechaInicio": "2026-08-25",
+            "fechaFin": "2026-08-29",
+            "precioNormal": "30",
+            "precioPromocion": "25",
+            "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui. Atención especializada en Dolor de rodilla, hombro, columna, nervio ciático, Artrosis y Artitris, Tendinitis, Tunel Carpiano, y más. Horario de atención 8H00 a 18h00 en las instalaciones de Cruz Roja Imbabura",
+            "estadoPromocion": "vigente",
+            "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-08-07T16:13:57.366Z",
+    "ultimaActualizacion": "2026-08-25T20:41:04.791Z",
     "version": "3.0"
 }
