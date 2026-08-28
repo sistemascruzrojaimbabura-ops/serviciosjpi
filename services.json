@@ -173,7 +173,7 @@
                 "traumatólogo",
                 "traumatología"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "horarioSemana": "Lunes a viernes de 8 a 10 am, martes - miércoles y viernes de 4 a 6 pm",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
@@ -313,6 +313,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-08-28T14:20:32.070Z",
+    "ultimaActualizacion": "2026-08-28T14:30:22.037Z",
     "version": "3.0"
 }
