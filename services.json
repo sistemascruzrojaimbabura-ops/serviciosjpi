@@ -137,7 +137,7 @@
             "nombre": "Alquiler y venta de Ortopédicos",
             "contacto": "062950888 extensión 106",
             "keywords": [
-                "ortopedia",
+                "ortopedicos",
                 "ortopédicos",
                 "alquiler"
             ],
@@ -298,6 +298,7 @@
             "nombre": "Especialista Traumatología y Ortopedia",
             "contacto": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Pediatría, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente.",
             "keywords": [
+                "especialista",
                 "campaña",
                 "traumatología",
                 "traumatologia"
@@ -312,6 +313,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-08-25T20:41:04.791Z",
+    "ultimaActualizacion": "2026-08-28T14:20:32.070Z",
     "version": "3.0"
 }
