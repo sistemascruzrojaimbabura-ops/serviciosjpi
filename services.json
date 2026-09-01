@@ -145,7 +145,7 @@
             "horarioSemana": "lunes a viernes: 7:00 a 18:00",
             "horarioFinSemana": "sábado 8:00 a 12:00",
             "horarioFeriado": "No aplica.",
-            "agendamiento": "Para contacto o más información llamar o escribir al número https://wa.me/593994349535 en el cual se debe colocar el ortopédico que desea alquilar o adquirir"
+            "agendamiento": "•Para contacto o más información llamar al número https://wa.me/593994349535 o acercarse a la institución."
         },
         {
             "id": "1765568716955",
@@ -286,7 +286,7 @@
                 "basicos",
                 "básicos"
             ],
-            "habilitado": false,
+            "habilitado": true,
             "fechasRealizacion": "21, 22 y 28, 29 de Agosto",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
@@ -314,6 +314,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-09-01T18:04:25.792Z",
+    "ultimaActualizacion": "2026-09-01T18:06:01.409Z",
     "version": "3.0"
 }
