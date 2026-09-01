@@ -173,7 +173,7 @@
                 "traumatólogo",
                 "traumatología"
             ],
-            "habilitado": false,
+            "habilitado": true,
             "horarioSemana": "Lunes a viernes de 8 a 10 am, martes - miércoles y viernes de 4 a 6 pm",
             "horarioFinSemana": "No aplica",
             "horarioFeriado": "No aplica",
@@ -304,16 +304,16 @@
                 "traumatología",
                 "traumatologia"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechaInicio": "2026-08-25",
             "fechaFin": "2026-08-29",
             "precioNormal": "30",
             "precioPromocion": "25",
             "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui. Atención especializada en Dolor de rodilla, hombro, columna, nervio ciático, Artrosis y Artitris, Tendinitis, Tunel Carpiano, y más. Horario de atención 8H00 a 18h00 en las instalaciones de Cruz Roja Imbabura",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-08-28T14:35:32.308Z",
+    "ultimaActualizacion": "2026-09-01T17:59:35.009Z",
     "version": "3.0"
 }
