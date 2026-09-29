@@ -279,15 +279,17 @@
         {
             "id": "1773155575622",
             "tipo": "capacitacion",
-            "nombre": "Curso de Primeros Auxilios Básicos",
+            "nombre": "Curso de Primeros Auxilios Básicos en Entornos Escolares",
             "contacto": "Para mayor información e inscripciones comunicarse directamente al siguiente número de WhatsApp https:wa.me/593995127034",
             "keywords": [
                 "auxilios",
                 "basicos",
-                "básicos"
+                "básicos",
+                "entornos",
+                "escolares"
             ],
             "habilitado": true,
-            "fechasRealizacion": "21, 22 y 28, 29 de Agosto",
+            "fechasRealizacion": "11, 18 y 25 de Octubre",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
             "descripcion": "Certificado por Cruz Roja Ecuatoriana Junta Provincial Imbabura\nDirigido a todo público\nDuración: 40 Horas"
@@ -314,6 +316,6 @@
             "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-09-01T18:06:01.409Z",
+    "ultimaActualizacion": "2026-09-29T21:46:35.962Z",
     "version": "3.0"
 }
