@@ -297,25 +297,23 @@
         {
             "id": "1787690361527",
             "tipo": "promocion",
-            "nombre": "Campaña de Traumatología y Ortopedia",
-            "contacto": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Pediatría, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente.",
+            "nombre": "Campaña de Promoción",
+            "contacto": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593994349535 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Campaña, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente.",
             "keywords": [
                 "campaña",
                 "especialista",
-                "campaña",
-                "traumatología",
-                "traumatologia"
+                "campaña"
             ],
-            "habilitado": false,
-            "fechaInicio": "2026-08-25",
-            "fechaFin": "2026-08-29",
+            "habilitado": true,
+            "fechaInicio": "2026-10-15",
+            "fechaFin": "2026-10-17",
             "precioNormal": "30",
             "precioPromocion": "25",
-            "descripcion": "Recupera tu libertad de movimiento con la Dra. Gabriela Chong Qui. Atención especializada en Dolor de rodilla, hombro, columna, nervio ciático, Artrosis y Artitris, Tendinitis, Tunel Carpiano, y más. Horario de atención 8H00 a 18h00 en las instalaciones de Cruz Roja Imbabura",
-            "estadoPromocion": "expirada",
-            "promocionVigente": false
+            "descripcion": "Consulta de Medicina General\nAsesoria Nutricional\nDetección de osteopenia y osteoporosis\níndice de masa corporal y signos vitales\nEcografías\nHorario de atención 8H00 a 18h00 en las instalaciones de Cruz Roja Imbabura",
+            "estadoPromocion": "vigente",
+            "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-09-29T21:46:35.962Z",
+    "ultimaActualizacion": "2026-10-15T14:50:14.463Z",
     "version": "3.0"
 }
