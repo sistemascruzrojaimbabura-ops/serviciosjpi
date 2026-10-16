@@ -108,9 +108,9 @@
                 "odontóloga"
             ],
             "habilitado": true,
-            "horarioSemana": "lunes a viernes: 7:00 a 18:00",
-            "horarioFinSemana": "sábado 7:00 a 12:00.",
-            "horarioFeriado": "No aplica.",
+            "horarioSemana": "lunes a viernes: 7:00 a 19:00",
+            "horarioFinSemana": "sábado 7:00 a 18:00",
+            "horarioFeriado": "Feriados: 7:00 a 12:00",
             "agendamiento": "Para la atención es necesario realizar un agendamiento enviando un mensaje al siguiente número: https://wa.me/593993405842 en el cual se debe colocar el servicio deseado, el nombre del paciente y la hora requerida (Ej: Odontología, Juan Pérez, Lunes a las 16:00) nuestro personal verificará la disponibilidad del horario y se contactará inmediatamente."
         },
         {
@@ -314,6 +314,6 @@
             "promocionVigente": true
         }
     ],
-    "ultimaActualizacion": "2026-10-15T14:50:14.463Z",
+    "ultimaActualizacion": "2026-10-16T19:17:30.727Z",
     "version": "3.0"
 }
