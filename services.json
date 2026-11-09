@@ -288,7 +288,7 @@
                 "entornos",
                 "escolares"
             ],
-            "habilitado": true,
+            "habilitado": false,
             "fechasRealizacion": "11, 18 y 25 de Octubre",
             "horario": "8:00 AM - 17:00 PM",
             "costo": "49.99",
@@ -310,10 +310,10 @@
             "precioNormal": "30",
             "precioPromocion": "25",
             "descripcion": "Consulta de Medicina General\nAsesoria Nutricional\nDetección de osteopenia y osteoporosis\níndice de masa corporal y signos vitales\nEcografías\nHorario de atención 8H00 a 18h00 en las instalaciones de Cruz Roja Imbabura",
-            "estadoPromocion": "vigente",
-            "promocionVigente": true
+            "estadoPromocion": "expirada",
+            "promocionVigente": false
         }
     ],
-    "ultimaActualizacion": "2026-10-16T19:17:30.727Z",
+    "ultimaActualizacion": "2026-11-09T17:31:39.801Z",
     "version": "3.0"
 }
